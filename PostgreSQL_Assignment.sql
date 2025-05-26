@@ -55,8 +55,6 @@ WHERE DATE (discovery_date) < '1800-01-01'
 
 -- Problem - 8
 
-SELECT sighting_id, sighting_time FROM sightings;
-
 SELECT sighting_id,
 CASE 
     WHEN date_part('hour', sighting_time) BETWEEN 5 AND 12 THEN  'Morning'
